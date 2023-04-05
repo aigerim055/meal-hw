@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import axios from "axios";
 
 const MealPage = () => {
@@ -20,12 +20,18 @@ const MealPage = () => {
 				setLoading(false)
 			})
 	}, [params.name])
+
 	
 	return (
 		<div className={'container'}>
 			<div className="meal">
 				{ loading ? <h2>loading....</h2>:
 					<div>
+						<div className="title">
+							<h1>{meal.strMeal}</h1>
+							<h4>Category: {meal.strCategory}</h4>
+							<h4>{meal.strArea} food</h4>
+						</div>
 						<div className={'row'}>
 							<div className="col-5">
 								<div className="box">
@@ -33,9 +39,7 @@ const MealPage = () => {
 								</div>
 							</div>
 							<div className="col-7">
-								<h1>{meal.strMeal}</h1>
-								<h4>Category: {meal.strCategory}</h4>
-								<h4>{meal.strArea} food</h4>
+								
 								<p>{meal.strInstructions}</p>
 							</div>
 						</div>
@@ -82,6 +86,7 @@ const MealPage = () => {
 								</ul>
 							</div>
 						</div>
+						<button><Link to={'/'}>go back</Link></button>
 					</div>
 					
 				}

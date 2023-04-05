@@ -51,14 +51,14 @@ code {
   color: white;
 }
 
-.item button {
+button {
   padding: 5px 10px;
   background-color: red;
   border-radius: 5px;
   border: none;
 }
 
-.item a {
+a {
   text-decoration: none;
   text-transform: uppercase;
   color: azure;
@@ -69,6 +69,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
+  align-items: center;
 }
 
 .col-5 {
@@ -117,4 +118,9 @@ body {
 
 .ingredients li {
   padding: 5px 0 5px 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 10px;
 }
