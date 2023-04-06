@@ -28,17 +28,26 @@ code {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  align-self: center;
+  /*align-self: center;*/
+  margin: 0 -15px;
 }
 
 .item {
-  width: 31%;
-  margin: 10px 0 10px 15px;
-  background: #000;
-  border-radius: 10px;
-  height: 100%;
+  width: 33.33%;
+  /*margin: 10px 0 10px 15px;*/
+
+  padding: 30px 15px 0 15px;
+  /*height: 460px;*/
 }
 
+.meal-item {
+  background: #000;
+  border-radius: 10px;
+}
+
+.meal-item button {
+  bottom: 0;
+}
 .item img {
   text-align: center;
   max-width: 100%;
@@ -49,6 +58,7 @@ code {
 .desc {
   padding: 20px;
   color: white;
+  height: 200px;
 }
 
 button {
@@ -62,14 +72,13 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   color: azure;
+  cursor: pointer;
 }
-
 
 .row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
-  align-items: center;
 }
 
 .col-5 {
@@ -98,7 +107,6 @@ body {
 }
 
 .meal p {
-  padding-top: 20px;
   font-size: 14px;
 }
 
@@ -123,4 +131,58 @@ body {
 .title {
   text-align: center;
   margin-bottom: 10px;
+}
+
+.ingredient img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.ingr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.ingredient p {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.ingredient a {
+  text-transform: unset;
+}
+
+.ingredient-desc img {
+  padding-top: 30px;
+  width: 100%;
+}
+
+.col-3 {
+  width: 25% ;
+  padding: 0 15px;
+}
+
+.a {
+  color: #fff;
+}
+
+.meal-ingredient img {
+  width: 100%;
+}
+
+.meal-ingredient a {
+  font-size: 10px;
+}
+
+.meal-ingredient {
+  margin: 10px 0 10px 0;
+}
+
+.ingredient-desc h2{
+  padding-top: 20px ;
+  text-align: center;
 }
