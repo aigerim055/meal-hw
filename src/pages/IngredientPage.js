@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import {Link, useParams} from "react-router-dom";
+import {Link, useNavigate, useParams} from "react-router-dom";
 
 
 const IngredientPage = () => {
+    
+    const navigate = useNavigate()
     const params = useParams()
     const [meal, setMeal] = useState([])
     const [loading, setLoading] = useState(true)
@@ -40,7 +42,7 @@ const IngredientPage = () => {
                                             <div key={idx} className={'col-3'}>
                                                 <div className={'box meal-ingredient'}>
                                                     <img src={`${meal.strMealThumb}`} alt=""/>
-                                                    <h5><Link to={`/meal/${meal.strMeal}`}>{meal.strMeal}</Link></h5>
+                                                    <h5><Link to={`/meal/${meal.idMeal}`}>{meal.strMeal}</Link></h5>
                                                 </div>
                                             </div>
                                         )
@@ -49,6 +51,7 @@ const IngredientPage = () => {
                         </div>
                     </div>
                 </div>
+                <button onClick={() => navigate(-1)}>go back</button>
             </div>
         </div>
     )

@@ -23,16 +23,16 @@ const HomePage = () => {
 		<div  >
 			{ loading ? <h2>loading....</h2>:
 				<div className={'container'}>
-					<div  className="meals">
+					<div  className="row">
 						{
 							meals.map((meal, idx) =>
-								<div key={idx} className={'item'}>
+								<div key={idx} className={'col-4 '}>
 									<div className="box meal-item">
 										<img src={meal.strMealThumb} alt=""/>
 										<div className="desc">
 											<h3>{meal.strMeal}</h3>
 											<p style={{marginTop: '15px', marginBottom: '15px'}}>{meal.strCategory}</p>
-											<button><Link to={`/meal/${meal.strMeal}`}>Read more</Link></button>
+											<button><Link to={`/meal/${meal.idMeal}`}>Read more</Link></button>
 										</div>
 									</div>
 								</div>
