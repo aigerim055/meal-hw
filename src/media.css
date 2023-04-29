@@ -1,0 +1,38 @@
+@media (max-width: 730px){
+    h3 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .desc {
+        height: 180px;
+    }
+}
+
+@media (max-width: 630px){
+    .col-4 {
+        width: 50%;
+    }
+
+    .ingr {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 370px) {
+    .col-4 {
+        width: 100%;
+    }
+
+    .col-5 {
+        width: 100%;
+    }
+
+    .col-7 {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}

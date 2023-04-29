@@ -7,7 +7,7 @@ const CustomModalVideo = (id) => {
 	// console.log(id)
 	const [isOpen, setOpen] = useState(true)
 	return (
-		<div>
+		<div className={'container'}>
 			<ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={videoId} onClose={() => setOpen(false)} />
 		</div>
 	);

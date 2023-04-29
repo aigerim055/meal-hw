@@ -19,7 +19,7 @@ const SearchPage = () => {
 			.finally(() => {
 				setLoading(false)
 			})
-	}, [])
+	}, [params])
 	// console.log(meals)
 	
 	return (
